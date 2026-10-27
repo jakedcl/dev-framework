@@ -1,2 +1,1 @@
-# dev-framework
-dcldev dev framework
+dcldev dev framework, see AGENTS.md
