@@ -7,9 +7,12 @@
 - **CMS content lives only in the CMS.** No hardcoded fallbacks. Why: Jake called them "shady" on three sites. (drewdella, jasiahpowers, jakedcl.com)
 - **Anything a client might edit is a field.** (jakedcl.com, jasiahpowers)
 - **Read the schema before writing.** Never invent fields, seed scripts fill only empty fields, and remove leftover fields after schema changes. (drewdella, jasiahpowers)
+- **When removing or renaming a schema field, unset that field on every existing document and draft.** Why: leftover values show Studio's yellow "Unknown fields found" box with a red Remove button, and clients think the site is broken. Grep the code first to confirm the field is unused; unset on published docs, then on drafts without publishing the client's in-progress edits. (jasiahpowers, Oct 27, 2026)
+- **Run `sanity schema deploy` whenever the schema changes.** Why: publishing via the Sanity MCP or API validates against the deployed server schema; if it's stale, publishes fail. The agent environment needs the Sanity CLI logged in or a deploy token. This applies to embedded Studios too: `sanity schema deploy` only uploads the schema definition for tools (MCP, API); it does not host a Studio. That's `sanity deploy`, which we don't use. (jasiahpowers, Oct 27, 2026)
 - **Back up the dataset before bulk edits.** Add only verified facts and delete nothing. Why: "fill in data only if its real!" (compactpickup)
 - **Each fact lives in one place.** Why: duplicates in fields and body text drifted apart. (compactpickup)
 - **Never discard drafts without asking.** (drewdella)
+- **Turn off Sanity's "What's new" announcement popups in every client Studio.** Add `announcements: { enabled: false }` to `defineConfig` in `sanity.config`. Why: clients shouldn't see product marketing in their CMS. The flag is internal/hidden in Sanity v6 types but works. (jasiahpowers, Oct 27, 2026)
 - **Client Studios work on a phone:** one page with fields in site order, 16px inputs, and "What's new" turned off. Why: clients edit from their phones, and iOS zoom blocks the keyboard. (731photography)
 
 ## How to decide
