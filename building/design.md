@@ -13,3 +13,4 @@ dcldev aims to look like a real, craft-first studio.
 - **Never render empty containers, and keep padding symmetric.** (Abis)
 - **Clickable things look like buttons.** (compactpickup)
 - **Motion is one shared, subtle system:** same timing everywhere, quick moves, nothing popping in. (jasiahpowers, Abis, metrotapes)
+- **Glass that works everywhere:** write `-webkit-backdrop-filter` before `backdrop-filter`, and never leave a filled animation (`both` or `forwards`) on a wrapper around fixed elements; use `backwards`. Why: the minifier dropped the unprefixed line in Chrome, and a filled page fade kept the header from blurring past the first section. (Abis #56)
