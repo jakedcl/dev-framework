@@ -8,5 +8,6 @@
 - [ ] No placeholder or unconfirmed content live. → [design.md](../building/design.md)
 - [ ] Test users, posts and uploads deleted. → [testing.md](../working/testing.md)
 - [ ] No tokens in public env vars, and payments out of sandbox only if real orders are intended. → [security.md](../building/security.md)
+- [ ] Uptime monitor added, with alerts to jake@dcldev.com, and failed builds alert Jake. → [monitoring.md](../hosting/monitoring.md)
 - [ ] Real check on desktop and a real phone. → [testing.md](../working/testing.md)
 - [ ] Client OK to feature the site in the portfolio. → [clients.md](../working/clients.md)
