@@ -3,6 +3,7 @@
 - **Squash-merge only, on every repo.** Why: one clean commit per change. (cursor helper)
 - **No AI co-author lines.** Pass an explicit squash message so GitHub doesn't add one. Why: Jake doesn't want agent attribution in his history. (cursor helper)
 - **Every repo has an AGENTS.md and CI (lint, typecheck, tests, build).** Why: agents start without rescanning, and breakage gets caught early. (cursor helper, dev helper)
+- **Typecheck passes on a fresh clone.** Scripts regenerate gitignored generated files first (like `cloudflare-env.d.ts` from `wrangler types`). (Abis #41)
 - **Every repo's AGENTS.md links to this framework and copies in the few rules agents need for that repo.** Why: the framework lives in a private repo some agents can't open, so the essentials have to be in the repo itself. (dependabot, Jake)
 - **Every project gets GitHub Dependabot (`.github/dependabot.yml`) set to weekly on Monday, never daily, with minor and patch updates grouped into one PR and majors as separate PRs.** Why: dependencies stay current without a daily flood of PRs, and majors get reviewed on their own because they can break things. (dev helper, Jake)
 - **No Dependabot on the ranger repo.** (Jake, Oct 27, 2026)
