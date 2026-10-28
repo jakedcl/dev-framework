@@ -6,6 +6,8 @@
 - **Destructive actions confirm or offer undo, and stay out of the way.** (bannquet)
 - **Members-only actions send logged-out users to sign in, then back to the same page.** (bannquet)
 - **Rows never wrap; truncate with "…".** Lists don't re-sort under someone's cursor. (bannquet)
+- **Text never widens the page:** `overflow-wrap: break-word` on text and `min-width: 0` on grid and flex children. Why: one long word pushed Abis pages to 487px wide on a 375px phone. (Abis #44, #59)
+- **Hover or tap UI follows the device, not the width:** `(hover: hover) and (pointer: fine)`. Why: a desktop browser in a narrow window got the phone bottom sheet. (Abis #53)
 - **Mobile inputs are at least 16px.** Why: iOS zooms in and hides the keyboard. (731photography)
 - **Respect reduced motion.** On weak devices, drop quality automatically. (metrotapes)
 - **Show content as soon as it's ready.** Pause off-screen animation, and animate only transform and opacity. Why: scroll lag and slow first paint on 3D sites. (metrotapes, jakedcl.com)
