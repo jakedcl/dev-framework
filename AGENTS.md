@@ -31,7 +31,7 @@ Jake's rules for building and running client sites as dcldev. Only rules that ho
 - **Server-action redirects**: land on the final page, never a URL that redirects again. → [building/server-action-redirects.md](building/server-action-redirects.md)
 - **Forms**: Sent only after a confirmed send, spam flagged never dropped, idempotent submits, unfinished forms say they aren't connected. → [building/forms.md](building/forms.md)
 - **Email**: every lead reaches the client from their own domain; Cloudflare costs checked. → [building/email.md](building/email.md)
-- **Legal**: privacy policy, accessibility statement and form consent on every site; restaurant notices; cookie banner only with a tracker. → [building/legal.md](building/legal.md)
+- **Legal**: privacy policy, accessibility statement and form consent on every new site; restaurant notices; cookie banner only with a tracker. → [building/legal.md](building/legal.md)
 - **Sign-in**: generic errors, cooldown lockout, failed-login logging. → [building/auth.md](building/auth.md)
 - **Security**: no browser tokens, no secrets in prompts or notes, no sensitive data. → [building/security.md](building/security.md)
 - **Neon**: preview branches, re-runnable migrations applied by a person, RLS, dry-run scripts. → [building/neon.md](building/neon.md)
