@@ -42,6 +42,7 @@ Jake's rules for building and running client sites as dcldev. Only rules that ho
 - **Vercel**: Hobby is non-commercial with team-wide quotas; overage at or near $0; verify secrets and deploys. → [hosting/vercel.md](hosting/vercel.md)
 - **Cloudflare**: client's own account, pre-render, `populateCache`, supported Next. → [hosting/cloudflare.md](hosting/cloudflare.md)
 - **Domains**: audit ownership first, don't touch email records, no `.vercel.app` links. → [hosting/domains.md](hosting/domains.md)
+- **Monitoring**: every live site on the one UptimeRobot account, alerts to jake@dcldev.com, failed builds alert Jake. → [hosting/monitoring.md](hosting/monitoring.md)
 - **SEO**: OG tags, crawlable robots and sitemap, real 404, matching structured data. → [hosting/seo-launch.md](hosting/seo-launch.md)
 
 ## Checklists
