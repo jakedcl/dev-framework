@@ -4,6 +4,7 @@ Things Jake has called out more than once. Most have a full rule elsewhere. This
 
 - **Changing or restyling what nobody asked for.** → [design.md](../building/design.md)
 - **Adding features, services or admin screens nobody asked for.** Suggest them first. Why: each one adds accounts, keys and upkeep. (drewdella, bannquet)
+- **Upselling while polishing a paid site.** Park ideas (analytics, gift cards, online ordering) on a change-order list for the maintenance pitch, and send it with Jake's OK. (Abis)
 - **Patching symptoms, announcing outages you haven't confirmed, or using jargon in updates.** → [agents.md](agents.md)
 - **Hidden fallback copies of CMS content.** → [sanity.md](../building/sanity.md)
 - **Saying "fixed" without seeing it live.** → [testing.md](testing.md)

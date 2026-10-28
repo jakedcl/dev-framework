@@ -25,12 +25,13 @@ Jake's rules for building and running client sites as dcldev. Only rules that ho
 
 ## Building
 - **Stack**: latest supported majors (Next 16+, check the support timeline), supported Node, free data sources, no porting without a reason. → [building/stack.md](building/stack.md)
-- **Sanity**: one embedded Studio, server-side fetching, no hidden fallbacks, back up before bulk edits. → [building/sanity.md](building/sanity.md)
+- **Sanity**: one embedded Studio at `/admin`, server-side fetching, no hidden fallbacks, back up before bulk edits, client-proof before handoff. → [building/sanity.md](building/sanity.md)
 - **Images**: CMS photos through the CMS CDN, never Vercel's optimizer. → [building/images.md](building/images.md)
 - **User uploads**: resize in the browser (full plus thumbnail), render `unoptimized`. → [building/user-uploads.md](building/user-uploads.md)
 - **Server-action redirects**: land on the final page, never a URL that redirects again. → [building/server-action-redirects.md](building/server-action-redirects.md)
-- **Forms**: idempotent submits, spam protection, unfinished forms say they aren't connected. → [building/forms.md](building/forms.md)
+- **Forms**: Sent only after a confirmed send, spam flagged never dropped, idempotent submits, unfinished forms say they aren't connected. → [building/forms.md](building/forms.md)
 - **Email**: every lead reaches the client from their own domain; Cloudflare costs checked. → [building/email.md](building/email.md)
+- **Legal**: privacy policy, accessibility statement and form consent on every new site; restaurant notices; cookie banner only with a tracker. → [building/legal.md](building/legal.md)
 - **Sign-in**: generic errors, cooldown lockout, failed-login logging. → [building/auth.md](building/auth.md)
 - **Security**: no browser tokens, no secrets in prompts or notes, no sensitive data. → [building/security.md](building/security.md)
 - **Neon**: preview branches, re-runnable migrations applied by a person, RLS, dry-run scripts. → [building/neon.md](building/neon.md)
@@ -40,7 +41,7 @@ Jake's rules for building and running client sites as dcldev. Only rules that ho
 
 ## Hosting and launch
 - **Vercel**: Hobby is non-commercial with team-wide quotas; overage at or near $0; verify secrets and deploys. → [hosting/vercel.md](hosting/vercel.md)
-- **Cloudflare**: client's own account, pre-render, `populateCache`, supported Next. → [hosting/cloudflare.md](hosting/cloudflare.md)
+- **Cloudflare**: client's own account, secrets set by hand, pre-render, `populateCache`, supported Next, OpenNext commands on every build. → [hosting/cloudflare.md](hosting/cloudflare.md)
 - **Domains**: audit ownership first, don't touch email records, no `.vercel.app` links. → [hosting/domains.md](hosting/domains.md)
 - **Monitoring**: every live site on the one UptimeRobot account, alerts to jake@dcldev.com, failed builds alert Jake. → [hosting/monitoring.md](hosting/monitoring.md)
 - **SEO**: OG tags, crawlable robots and sitemap, real 404, matching structured data. → [hosting/seo-launch.md](hosting/seo-launch.md)
