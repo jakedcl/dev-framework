@@ -14,5 +14,15 @@
 - **Delete one-off scripts after they run.** Git keeps them. (bannquet)
 - **Public repos keep internal docs in `docs/internal/` and have a LICENSE, or they're private.** Why: clients and interviewers read them. (logiparty)
 
+## QA before merge
+- **Every PR gets a written pass from the QA bot before Jake merges it to main.** The project bot sends the PR to QA and waits. Why: a second check by someone who didn't build it caught an Abis form that said Sent when nothing went out, and a fix that broke the footer at 768px. (Abis #39, #44, Jake Oct 30, 2026)
+- **What to send QA:** the PR link, the preview URL, what changed, and what to focus on. Also say what QA mustn't touch, such as a form that emails the client. Why: QA tests the right pages and never sends a real lead.
+- **After fixes, send the new commit and QA tests it again.** A pass covers only the commit it names. Why: a fix can break something new, and a pass on an earlier push says nothing about the next one.
+- **QA tests against [checklists/qa.md](../checklists/qa.md).** P0 and P1 findings block the merge. P2 and P3 are noted.
+- **QA never merges or edits the code.** It reports to the project bot, and Jake still decides the merge.
+
+## How to decide: does a PR need QA
+- **Docs-only and dependency-only PRs skip QA unless they change how a site looks or works.** Major bumps of Next, React, the CMS or a UI library count as changing how it works. Low-risk tweaks that go straight to main (below) skip it too, and Jake checks them live.
+
 ## How to decide: PR or straight to main
 - **Decide by risk, not size.** Low-risk copy or style tweaks can go straight to main, and Jake checks them live. Anything touching data, auth, forms, payments, routing or a client-visible redesign gets a preview PR and a real check before merge. Never merge with conflicts or failing checks.
