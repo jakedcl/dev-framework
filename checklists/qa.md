@@ -54,7 +54,7 @@ A PR passes when its latest commit adds no P0 or P1. Issues already on main get 
 - [ ] A canonical on the real domain. Missing: P2. Points at a preview: P1.
 - [ ] `robots.txt` and `sitemap.xml` load outside any login and list the real domain. Fail: P1. Production blocked from search (`noindex` or `Disallow: /`): P0.
 - [ ] Structured data parses and matches the page (hours, address, reservations). Doesn't parse: P1. Doesn't match: P2.
-- [ ] At launch: Search Console verified with the sitemap submitted, and the Business Profile linked for local businesses. Fail: P1. → [launch.md](launch.md)
+- [ ] At launch (business sites): Search Console Domain property verified (a `google-site-verification` TXT record on the apex) and the sitemap submitted, and for local businesses the Business Profile links the site. Fail: P3. → [seo-launch.md](../hosting/seo-launch.md)
 
 ### Security basics (production and launch)
 - [ ] `http` and `www` both 301 to the apex in one hop and keep the path. `www` doesn't resolve: P0. Other failures: P1. → [domains.md](../hosting/domains.md)
