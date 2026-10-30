@@ -7,6 +7,7 @@ Paste this section into each client repo's AGENTS.md, under the repo's own notes
 This repo follows Jake's dcldev dev framework: https://github.com/jakedcl/dev-framework (private, start at AGENTS.md). If you can't open it, these still apply:
 - Squash-merge only. No Co-authored-by or other AI attribution lines.
 - Never merge unless Jake said to. Ask before deleting anything.
+- Send every PR to the QA bot (PR link, preview URL, what changed, what to focus on) and wait for its written pass before Jake merges. Docs-only and dependency-only PRs skip QA unless they change how the site looks or works.
 - Root cause before patching. Small, reviewable changes. "Fixed" only after seeing it live.
 - Latest supported majors (Next 16+). Dependabot weekly on Monday, minor+patch grouped, majors separate.
 - One Sanity Studio, embedded at /admin (older sites on /studio stay as they are). Never a hosted *.sanity.studio.
