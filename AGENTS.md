@@ -25,7 +25,7 @@ Jake's rules for building and running client sites as dcldev. Only rules that ho
 
 ## Building
 - **Stack**: latest supported majors (Next 16+, check the support timeline), supported Node, free data sources, no porting without a reason. → [building/stack.md](building/stack.md)
-- **Sanity**: one embedded Studio at `/admin`, server-side fetching, no hidden fallbacks, back up before bulk edits, client-proof before handoff. → [building/sanity.md](building/sanity.md)
+- **Sanity**: one embedded Studio at `/admin`, server-side fetching, all visible and SEO content in Studio with no hidden fallbacks, back up before bulk edits, client-proof before handoff. → [building/sanity.md](building/sanity.md)
 - **Images**: CMS photos through the CMS CDN, never Vercel's optimizer. → [building/images.md](building/images.md)
 - **User uploads**: resize in the browser (full plus thumbnail), render `unoptimized`. → [building/user-uploads.md](building/user-uploads.md)
 - **Server-action redirects**: land on the final page, never a URL that redirects again. → [building/server-action-redirects.md](building/server-action-redirects.md)
