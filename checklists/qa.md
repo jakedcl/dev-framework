@@ -8,7 +8,7 @@ What QA checks on every PR it reviews, and the bar each check has to clear. QA r
 - **P2: noted, fix soon.** Works but looks or performs worse than it should: slow mobile LCP, missing security headers, AI-sounding copy, stale years, structured data that doesn't match.
 - **P3: noted, polish.** Small wins: oversized thumbnails, minor axe issues, cache headers.
 
-A PR passes when it has no P0 or P1 on its latest commit. QA lists every P2 and P3 so the project bot can fix them in the same PR or log them. A bug that was fixed before and comes back is at least P1.
+A PR passes when its latest commit adds no P0 or P1. Issues already on main get logged and reported, but they don't block an unrelated PR. QA lists every P2 and P3 so the project bot can fix them in the same PR or log them. A bug that was fixed before and comes back is at least P1.
 
 ## Checks
 
