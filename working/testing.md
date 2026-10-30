@@ -8,7 +8,7 @@
 - **Before a test form submission, check where it actually sends.** Why: a CMS setting sent a test to the client. (jasiahpowers)
 - **Before launch, run every form path through a harness with a stubbed mailer.** Cover success, each spam check, Turnstile failure, expiry, a paused inbox and a mail error. No path may show success without a send. Why: on Abis, 16 of 30 paths showed a false Sent; after the fix, 0. (Abis #39)
 
-- **Before merge, the QA bot runs [checklists/qa.md](../checklists/qa.md) on the preview.** → [git.md](git.md)
+- **When Jake asks for QA, the QA bot runs [checklists/qa.md](../checklists/qa.md) on the preview.** → [git.md](git.md)
 
 ## How to decide how much to test
 - **Match the check to the risk** (see [git.md](git.md)). Jake checks low-risk copy and style tweaks live. Changes to data, auth, forms, payments, routing or a client-visible redesign get a real check on the preview, on every page touched, on desktop and phone.
