@@ -9,6 +9,7 @@
 - [ ] No placeholder or unconfirmed content live. → [design.md](../building/design.md)
 - [ ] Privacy policy, accessibility statement and form consent line live (restaurants: allergy line and raw advisory). → [legal.md](../building/legal.md)
 - [ ] Studio client-proofed: limits, required fields, locked pages, protected photos. → [sanity.md](../building/sanity.md)
+- [ ] Sanity schema deployed from the repo: `list_workspace_schemas` shows one current schema per dataset, with no stale `default` or MCP-managed copy, and the box has `SANITY_AUTH_TOKEN` for `sanity schema deploy`. → [sanity.md](../building/sanity.md)
 - [ ] Test users, posts and uploads deleted. → [testing.md](../working/testing.md)
 - [ ] No tokens in public env vars, and payments out of sandbox only if real orders are intended. → [security.md](../building/security.md)
 - [ ] Uptime monitor added, with alerts to jake@dcldev.com, and failed builds alert Jake. → [monitoring.md](../hosting/monitoring.md)
