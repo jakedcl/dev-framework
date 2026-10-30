@@ -10,7 +10,7 @@ Jake's rules for building and running client sites as dcldev. Only rules that ho
 ## Hard rules (every repo, every tool)
 - Squash-merge only. No Co-authored-by or other AI attribution lines. → [working/git.md](working/git.md)
 - Never merge unless Jake said to. Ask before deleting anything. → [working/agents.md](working/agents.md)
-- Every PR gets QA's written pass before Jake merges it. Docs-only and dependency-only PRs skip QA unless they change how a site looks or works. → [working/git.md](working/git.md)
+- PRs go to QA only when Jake asks for it. Otherwise Jake reviews and merges without a QA pass. → [working/git.md](working/git.md)
 - Cloud agents launch in the repo's saved environment and start from its AGENTS.md. → [working/agents.md](working/agents.md)
 - "Fixed" only after seeing it live. → [working/testing.md](working/testing.md)
 - No secrets in prompts, notes, docs or browser env vars. → [building/security.md](building/security.md)
@@ -19,7 +19,7 @@ Jake's rules for building and running client sites as dcldev. Only rules that ho
 ## How we work
 - **Principles**: free or cheap by default, grow the agency, only always-true rules. → [principles.md](principles.md)
 - **AI agents**: confirm the repo and main first, root cause before patching, small changes, plain-word updates, ask before deleting. Cloud agents launch in the repo's saved environment, start from AGENTS.md, and get tight briefs. Plus how to pick a model and when to start a new agent. → [working/agents.md](working/agents.md)
-- **Git**: squash-merge, no AI co-authors, QA's pass before merge, AGENTS.md that links here, CI, Dependabot (weekly Monday, minor+patch grouped, majors separate, never daily, none on ranger). PR vs straight to main is decided by risk. → [working/git.md](working/git.md)
+- **Git**: squash-merge, no AI co-authors, QA only when Jake asks, AGENTS.md that links here, CI, Dependabot (weekly Monday, minor+patch grouped, majors separate, never daily, none on ranger). PR vs straight to main is decided by risk. → [working/git.md](working/git.md)
 - **Testing**: "fixed" only after seeing it live, phone widths, real devices for 3D and fonts, test by risk. → [working/testing.md](working/testing.md)
 - **Clients**: nothing goes out without Jake, placeholders in his voice, client owns accounts, handoffs. → [working/clients.md](working/clients.md)
 - **Anti-patterns**: the quick list of things Jake has called out. → [working/anti-patterns.md](working/anti-patterns.md)

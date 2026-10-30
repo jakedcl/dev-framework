@@ -1,6 +1,6 @@
 # QA checklist
 
-What QA checks on every PR it reviews, and the bar each check has to clear. QA runs it on the PR's preview, at every page the PR touches, and on the whole site before launch. Most rules live in their topic files; this file links them and sets the pass bar and severity.
+What QA checks on a PR when Jake asks for a review, and the bar each check has to clear. QA runs it on the PR's preview, at every page the PR touches, and on the whole site before launch if Jake asks. Most rules live in their topic files; this file links them and sets the pass bar and severity.
 
 ## Severity
 - **P0: blocks merge.** The site, a page or a lead is lost: down or error pages, a form that says Sent without sending, a leaked secret, production set to `noindex`, `www` that doesn't resolve.
