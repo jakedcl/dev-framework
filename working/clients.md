@@ -8,7 +8,7 @@ Client work runs as dcldev (dcldev.com, jake@dcldev.com).
 - **Client-visible placeholders sound like Jake, never like an agent.** Keep the full to-do list in a private launch checklist. Why: "he thinks i made this." (Abis)
 - **The first message to a client lists unfinished items honestly.** (Abis)
 - **Write a handoff before retiring a helper, and handoff docs go to Jake, not the repo.** (metrotapes, jasiahpowers)
-- **The client handoff pack is a standard deliverable:** account transfer (above) and a plain-language editing guide with screenshots, including how to use Presentation. Like other handoff docs, it goes to Jake first. (Abis)
+- **The client handoff pack is a standard deliverable:** account transfer (above) and a plain-language editing guide with screenshots, including how to use Presentation. Like other handoff docs, it goes to Jake first. (Abis) → [handoff.md](../checklists/handoff.md)
 - **Keep one running list of questions for the client and send it as one batch.** Nothing should wait on it. Why: Abis's questions piled up across chats until they became one 24-item file. (Abis)
 - **Clients edit from their phones, so keep their CMS simple.** (731photography)
 - **Basic SEO is part of every build,** and the client adds jake@dcldev.com as a Business Profile Manager, not Owner. (Abis)
